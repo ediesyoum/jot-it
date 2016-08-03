@@ -1,0 +1,59 @@
+body {
+	background-color: papayawhip;
+	font-family: 'Josefin Slab', serif;
+}
+a {
+  color: maroon;
+  text-decoration: none;
+}
+a:hover {
+  color: orangered;
+  text-decoration: none;
+  cursor: pointer;
+}
+h1 a:link,
+h1 a:visited {
+    color: black;
+}
+h1 {
+  color: orangered;
+  text-align: center;
+  font-size: 3em;
+	font-weight: bold;
+}
+h2 {
+  color: black;
+	text-align: center;
+}
+h3 {
+	display: inline-block;
+	margin-bottom: -2px;
+}
+p {
+  text-align: justify;
+}
+ul {
+  padding: 10px;
+}
+li {
+  border-color: #006a6b;
+}
+div {
+  background-color: lightgrey;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding-bottom: 10px;
+  margin: 10px auto;
+  text-align: center;
+}
+@media (width: 600px) {
+  h1 {
+    font-size: 36px;
+    padding: 5px;
+  }
+  li {
+    padding: 5px;
+    display: block;
+  }
+}

@@ -1,0 +1,18 @@
+<h1>Add a new Note</h1>
+<%= form_for @note do |f| %>
+  <div align="center"><br/>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div align="center"><br/>
+    <%= f.label :user.username %>
+    <%= f.text_area :user.username %>
+  </div>
+  <div align="center"><br/>
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+  <div align="center"><br/>
+  <%= f.submit "Add your Note" %>
+  </div>
+  <% end %>
