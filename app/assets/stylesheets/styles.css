@@ -49,8 +49,8 @@ div {
 }
 @media (width: 600px) {
   h1 {
-    font-size: 36px;
-    padding: 5px;
+    font-size: 2em;
+    padding: 2px;
   }
   li {
     padding: 5px;
