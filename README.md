@@ -2,7 +2,7 @@
 
 Jot-It is a lightweight note taking web app made with Ruby on Rails.
 
-## User Stories
+### User Stories
 
 - When a user accesses the page, they should see the app’s logo at the top.
 
@@ -24,7 +24,7 @@ Jot-It is a lightweight note taking web app made with Ruby on Rails.
 
 - A user should be able to sign out and know they are signed out (brought back to welcome/landing page).
 
-## MVPs:
+### MVPs:
 
 - Have a welcome/landing page where users can log in, sign up or click around to learn more about the jot-it app
 
@@ -42,7 +42,7 @@ Jot-It is a lightweight note taking web app made with Ruby on Rails.
 
 - Use and find icons for: jot-it app logo, a new note’s creation, “view”, “edit”, “delete”
 
-## Stretch Goals & Dreams
+### Stretch Goals & Dreams
 
 - Have the user log in using their username OR email address (currently Devise has users create accounts and login by email only)
 
@@ -56,15 +56,15 @@ Jot-It is a lightweight note taking web app made with Ruby on Rails.
 
 - Incorporate different media types into notes (images, audio files, etc)
 
-## Configuration
+### Configuration
 
 * Devise for authentication, bcrypt for encryption
 
-## Database creation
+### Database creation
 
 * PostgresQL, MySQL
 
-# Deployment instructions
+### Deployment instructions
 
 * Heroku will be used for app deployment
 
