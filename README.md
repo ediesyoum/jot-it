@@ -1,6 +1,6 @@
 # Jot-It
 
-Things you may want to cover:
+Jot-It is a lightweight note taking web app made with Ruby on Rails.
 
 ## User Stories
 
