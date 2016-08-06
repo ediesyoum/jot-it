@@ -1,7 +1,7 @@
 # Jot-It
 
 <p align="center">
-<img src="">
+<img src="https://github.com/ediesyoum/jot-it/blob/master/app/assets/images/jot-it.png?raw=true" alt="Jot-It!" title="Jot-It!">
 </p>
 
 Jot-It is a lightweight note taking web app made with Ruby on Rails.
