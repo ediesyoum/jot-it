@@ -5,6 +5,7 @@ class CreateNotes < ActiveRecord::Migration[5.0]
       t.text :content
       t.references :user, foreign_key: true
 
+      t.timestamps
     end
   end
 end
