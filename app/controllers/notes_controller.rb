@@ -1,5 +1,7 @@
 class NotesController < ApplicationController
 
+  before_action :find_note, only: [:show, :edit, :update, :destroy]
+
   def index
     @notes = Note.all
   end
@@ -13,12 +15,11 @@ class NotesController < ApplicationController
   end
 
   def create
-    note = Note.new(note_params)
-    if note.save
-      redirect_to '/notes'
+    @note = Note.new(note_params)
+    if @note.save
+      redirect_to @note
     else
-      redirect_to 'new_note_url'
-      # puts "ERROR"
+      render 'new'
     end
   end
 
@@ -34,10 +35,11 @@ class NotesController < ApplicationController
   private
 
   def find_note
+    @note = Note.find(params[:id])
   end
 
   def note_params
-    params.require(:note).permit(:title, :user, :content)
+    params.require(:note).permit(:title, :content, :user_id)
   end
 
 end
