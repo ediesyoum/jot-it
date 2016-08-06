@@ -22,9 +22,22 @@ class NotesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+  end
+
+  def destroy
+  end
+
   private
-    def note_params
-      params.require(:note).permit(:title, :user, :content)
-    end
+
+  def find_note
+  end
+
+  def note_params
+    params.require(:note).permit(:title, :user, :content)
+  end
 
 end
