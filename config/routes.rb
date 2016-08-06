@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: 'users#index'
+  root to: 'welcome#index'
 
   resources :users
 
@@ -12,15 +12,5 @@ Rails.application.routes.draw do
   get '/sign_out', to: 'users#sign_out'
 
   resources :notes
-
-  get '/notes', to: 'notes#index'
-
-  get "notes/new", to: "notes#new"
-
-  post "notes", to: "notes#create"
-
-  get '/about', to: 'static#about'
-
-  get '/contact', to: 'static#contact'
 
 end
