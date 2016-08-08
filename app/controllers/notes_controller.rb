@@ -1,14 +1,9 @@
 class NotesController < ApplicationController
 
-  before_action :find_note, only: [:show, :edit, :update, :destroy]
-
   def index
     @notes = Note.all
   end
 
-  def show
-    @note = Note.find(params[:id])
-  end
 
   def new
     @note = Note.new
@@ -16,11 +11,18 @@ class NotesController < ApplicationController
 
   def create
     @note = Note.new(note_params)
+    @note.user_id = current_user.id
+
     if @note.save
-      redirect_to @note
+      redirect_to notes_url
     else
-      render 'new'
+      puts "ERROR test to see if we are getting here on create"
     end
+
+  end
+
+  def show
+    @note = Note.find(params[:id])
   end
 
   def edit
@@ -30,6 +32,11 @@ class NotesController < ApplicationController
   end
 
   def destroy
+    @note = Note.find(params[:id])
+    @note.destroy
+
+    redirect_to notes_path
+    end
   end
 
   private
@@ -41,5 +48,3 @@ class NotesController < ApplicationController
   def note_params
     params.require(:note).permit(:title, :content, :user_id)
   end
-
-end
