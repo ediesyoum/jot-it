@@ -32,14 +32,18 @@ class NotesController < ApplicationController
   end
 
   def update
+    if @note.update(note_params)
+      redirect_to @note
+    else
+      render 'edit'
+    end
   end
 
   def destroy
-    @note = Note.find(params[:id])
     @note.destroy
 
     redirect_to notes_path
-    end
+
   end
 
   private
@@ -51,3 +55,4 @@ class NotesController < ApplicationController
   def note_params
     params.require(:note).permit(:title, :content, :user_id)
   end
+end
