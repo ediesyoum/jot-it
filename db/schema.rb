@@ -16,9 +16,11 @@ ActiveRecord::Schema.define(version: 20160803152242) do
   enable_extension "plpgsql"
 
   create_table "notes", force: :cascade do |t|
-    t.string  "title"
-    t.text    "content"
-    t.integer "user_id"
+    t.string   "title"
+    t.text     "content"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_notes_on_user_id", using: :btree
   end
 
