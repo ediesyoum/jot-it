@@ -6,4 +6,4 @@ class StaticController < ApplicationController
   def contact
   end
 
-en
+end
