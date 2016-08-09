@@ -4,7 +4,11 @@
 <img src="https://github.com/ediesyoum/jot-it/blob/master/app/assets/images/jot-it.png?raw=true" alt="Jot-It!" title="Jot-It!">
 </p>
 
-Jot-It is a lightweight note taking web app made with Ruby on Rails.
+<p align="center">
+Jot-It is a lightweight note taking web app made with Ruby on Rails.<br/><br/>
+
+<a href="https://jot-it-app.herokuapp.com/" target="_blank" title="Jot-It App!" alt="Jot-It App!">Click here to go to Jot-It</a>
+</p>
 
 - - - -
 
