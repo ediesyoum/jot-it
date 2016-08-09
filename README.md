@@ -7,7 +7,7 @@
 <p align="center">
 Jot-It is a lightweight note taking web app made with Ruby on Rails.<br/><br/>
 
-<a href="https://jot-it-app.herokuapp.com/" target="_blank" title="Jot-It App!" alt="Jot-It App!">Click here to go to Jot-It</a>
+<a href="https://jot-it-app.herokuapp.com/" alt="Jot-It App!" target="_blank">Click here to go to Jot-It</a>
 </p>
 
 - - - -
