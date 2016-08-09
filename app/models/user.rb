@@ -6,11 +6,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable,
          :validatable, :authentication_keys => [:email]
 
+  has_many :notes, dependent: :destroy
 
-
-    has_many :notes, dependent: :destroy
-
-    # Virtual attribute for authenticating by either username or email
-    # This is in addition to a real persisted field like 'username'
-    attr_accessor :login
+  # Virtual attribute for authenticating by either username or email
+  # This is in addition to a real persisted field like 'username'
+  attr_accessor :login
 end
