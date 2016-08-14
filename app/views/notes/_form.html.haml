@@ -1,4 +1,9 @@
-= simple_form_for @note do |f|
-  = f.input :title
-  = f.input :content
-  = f.button :submit
+#note_show
+
+  = simple_form_for @note do |f|
+    = f.input_field :title, :placeholder => "Note title"
+    = f.input_field :content, :placeholder => "Jot your note"
+
+    <br>
+
+    %button= f.submit "Create new note"
