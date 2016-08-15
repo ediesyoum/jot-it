@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
 	background-image: asset-url('crushedpaper.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	font-family: 'Patua One', cursive;
+	font-family: 'Raleway', sans-serif;
 }
 
 * {
@@ -25,9 +25,7 @@ h2 {
   color: black;
 	text-align: center;
 }
-div {
-  background-color: papayawhip;
-}
+
 @media (width: 600px) {
   h1 {
     font-size: 2em;
@@ -72,11 +70,6 @@ button, .button {
 	}
 }
 
-.button {
-	text-decoration: none;
-	margin: 1em 0;
-}
-
 a {
 	color: green;
 	text-decoration: none;
@@ -87,18 +80,22 @@ a {
 }
 
 header {
-	background: teal;
 	position: fixed;
 	top: 0;
 	left:0px;
 	width: 100%;
 	padding: 0;
 	float: left;
-	border-bottom: 2px solid teal;
+	border-bottom: 4px solid teal;
+
 
 	.header_inner {
 		width: 100%;
 		margin: 0 auto;
+		padding: 2%;
+		background-color: rgba(113, 53, 54, .9);
+		border-bottom: 4px solid teal;
+
 
 		nav {
 			float: right;
@@ -145,15 +142,14 @@ textarea {
 	min-height: 200px;
 }
 
-// welcome page
-
 #banner {
-	background-image: url(image_path(""));
+	background-image: url(image_path("banner.png"));
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: center;
+	border-top: 4px solid teal;
 	width: 100%;
-	min-height: 500px;
+	min-height: 650px;
 	display: table;
 
 	.banner_content {
@@ -172,8 +168,6 @@ textarea {
 	}
 }
 
-// notes styles
-
 #notes {
 	background-color: rgba(43, 46, 46, .9);
 	width: 70%;
@@ -183,22 +177,6 @@ textarea {
 	border-radius: 1em;
 	text-align: center;
 	letter-spacing: 1px;
-	position: absolute;
 	color: #33CD99;
 	font-size: 1em;
-}
-
-#note_show {
-	font-size: 2.5rem;
-	margin-bottom: 1.25rem;
-	padding-bottom: 1rem;
-	border-bottom: 1px solid #E9E9E9;
-	text-align: center;
-	font-size: 1.375rem;
-	line-height: 1.75;
-	padding: .5rem 2rem;
-	border-radius: 2rem;
-	text-decoration: none;
-	color: #33CD99;
-	background: transparent;
 }
