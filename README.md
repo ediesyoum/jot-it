@@ -83,3 +83,9 @@ Jot-It is a lightweight note taking web app made with Ruby on Rails.<br/><br/>
 
 <a href="https://www.youtube.com/watch?v=bDbPiaVl2g4&feature=youtu.be" target="_blank">Mackenzie Child's NoteNote App</a>
 For styling, HAML/Simple Form use and some advanced features.
+
+### Other Resources
+
+Front page image - https://pixelbuddha.net/freebie/4-notebook-mockups
+
+Responsive text - https://www.smashingmagazine.com/2016/05/fluid-typography/
